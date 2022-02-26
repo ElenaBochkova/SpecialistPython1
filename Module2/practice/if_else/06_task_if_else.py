@@ -8,3 +8,13 @@
 year = int(input("Год: "))
 
 # TODO: your code here
+
+num = 365
+
+if year % 4 == 0:
+    if year % 100 != 0:
+        num = 366
+    elif year % 400 == 0:
+        num = 366
+        
+print(num)
