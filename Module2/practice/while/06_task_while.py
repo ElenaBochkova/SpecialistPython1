@@ -17,3 +17,24 @@
 # 284 220
 
 # TODO: your code here
+
+N = int(input("Число: "))
+start = 1
+
+while start <= N:
+    num1 = start
+    num2 = 0
+    num3 = 0
+    a = 1
+    while a < num1:
+        if num1 % a == 0:
+            num2 += a
+        a += 1
+    a = 1
+    while a < num2:
+        if num2 % a == 0:
+            num3 += a
+        a += 1
+    if num3 == num1 and num1 != num2:
+        print(str(num1) + " " + str(num2))
+    start += 1
