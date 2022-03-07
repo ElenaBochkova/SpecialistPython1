@@ -6,3 +6,11 @@
 
 # TODO: your code here
 
+text = input("Line: ")
+
+line = text.replace(" ", "").replace(".", "").replace(",", "").replace("-", "").lower()
+
+if line[:] == line[::-1]:
+    print("Yes")
+else:
+    print("No")
