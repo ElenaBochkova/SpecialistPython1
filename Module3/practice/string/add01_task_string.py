@@ -8,3 +8,22 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat
 # Примечание: обратите внимание на перенос длинной строки на новую строку
 
 # TODO: your code here
+
+text = text.replace(",","").replace(".","").replace("!", "").replace("?", "").replace(" - "," ").replace("\n", " ")
+
+index = 1
+count = 0
+
+while index != len(text):
+    index = text.find(" ")
+    if index == -1:
+        index = len(text)
+        word = text
+    else:
+        word = text[:index]
+    if len(word) > 7:
+        count += 1
+        print(word)
+    text = text[index+1:]
+
+print(count)
