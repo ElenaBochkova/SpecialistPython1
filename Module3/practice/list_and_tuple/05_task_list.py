@@ -7,6 +7,20 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
 
+length = 0
+
+for el in fruits:
+    if len(el) > length:
+        length = len(el)
+
+i = 1
+
+for el in fruits:
+    if len(el) < length:
+        el = " " * (length - len(el)) + el
+    print(str(i) + ". " + el)
+    i += 1
+
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
