@@ -10,3 +10,15 @@
 # 1234
 
 # TODO: your code here
+
+n = int(input("n: "))
+a = 1
+
+while a <= n:
+    b = 1
+    line = ""
+    while b <= a:
+       line = line + str(b)
+       b += 1
+    print(line)
+    a += 1
