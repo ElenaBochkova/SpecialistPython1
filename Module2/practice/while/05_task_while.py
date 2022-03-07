@@ -18,3 +18,23 @@
 
 
 # TODO: your code here
+
+side = int(input("Сторона квадрата: "))
+
+last = side
+first = 1
+j = 1
+
+while j <= side:
+    string = ""
+    i = 1
+    while i <= side:
+        if i == first or i == last:
+            string += "#"
+        else:
+            string += " "
+        i += 1
+    print(string)
+    first += 1
+    last -= 1
+    j += 1
