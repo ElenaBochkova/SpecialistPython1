@@ -5,3 +5,16 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+from math import sqrt
+
+numbers = [2, -5, 8, 0, 3, 9, -25, 25, 4]
+
+sqrt_numbers = []
+
+for el in numbers:
+    if el >= 0:
+        if sqrt(el) % 1 == 0:
+            sqrt_numbers.append(int(sqrt(el)))
+
+print(sqrt_numbers)
