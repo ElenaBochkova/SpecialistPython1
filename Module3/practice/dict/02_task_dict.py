@@ -5,5 +5,13 @@ keys = ['name', 'surname', 'age', 'rate']
 values = ['Петр', 'Первый', 42, 1300]
 
 # TODO: your code here
+
+items = {}
+
+for key, value in zip(keys, values):
+    items[str(key)] = str(value)
+
+print(items)
+
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
