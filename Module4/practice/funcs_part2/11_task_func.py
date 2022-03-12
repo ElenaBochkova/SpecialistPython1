@@ -1,8 +1,12 @@
 # Используя функцию average() из предыдущей задачи, найдите среднее арифметическое всех элементов списка и кортежа
 
 def average(*args):
-    # TODO: тело из предыдущей задачи
-    pass
+    if len(args) > 0:
+        s = 0
+        for el in args:
+            s += el
+        return s / len(args)
+    return 0
 
 
 def gen_list(size, at=-10, to=10):
@@ -20,4 +24,9 @@ def gen_list(size, at=-10, to=10):
 
 
 my_list = gen_list(10)
+
+print("Average:", average(*my_list))
+
 my_tuple = 5, 7, -4, 10, 8
+
+print("Average:", average(*my_tuple))
